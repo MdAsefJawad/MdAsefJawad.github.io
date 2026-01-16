@@ -3,416 +3,179 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Md Asef Jawad — networking, cybersecurity, SDN, IoT, and applied ML." />
-  <title>Md Asef Jawad | Portfolio</title>
+  <title>Md Asef Jawad</title>
+  <meta name="description" content="Md Asef Jawad — Network Technology, Security, SDN/IoT, Applied ML." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a class="logo" href="#top" aria-label="Home">AJ</a>
-        <div class="brand-text">
-          <div class="name">Md Asef Jawad</div>
-          <div class="tagline">Network Technology • Security • SDN/IoT • Test Automation</div>
-        </div>
-      </div>
-
-      <nav class="nav">
-        <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="navLinks">
-          Menu
-        </button>
-        <div id="navLinks" class="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#publications">Publications</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#contact">Contact</a>
-        </div>
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="topbar-name">Md Asef Jawad</div>
+      <nav class="topbar-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#honors">Honors & Awards</a>
+        <a href="#cv">CV</a>
       </nav>
+      <button class="topbar-menu" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+    </div>
+
+    <div class="wrap mobile-nav" id="mobileNav">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#honors">Honors & Awards</a>
+      <a href="#cv">CV</a>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow">Ottawa, Ontario • Open to research / networking / security roles</p>
-          <h1>Secure, testable, and measurable networked systems.</h1>
-          <p class="lead">
-            I’m <strong>Md Asef Jawad</strong>, a Master of Network Technology student at Carleton University with hands-on
-            experience in network QA/regression, packet analysis, and test automation. I build practical solutions in
-            <strong>SDN</strong>, <strong>IoT security</strong>, and <strong>ML-driven detection</strong>.
-          </p>
-
-          <div class="cta-row">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="#contact">Contact</a>
-            <a class="btn subtle" href="https://github.com/mdasefjawad" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn subtle" href="https://www.linkedin.com/in/asef-jawad-a4949620a/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-
-          <div class="quick-metrics">
-            <div class="metric">
-              <div class="metric-num">3</div>
-              <div class="metric-label">Featured Projects</div>
-            </div>
-            <div class="metric">
-              <div class="metric-num">3</div>
-              <div class="metric-label">Relevant Roles</div>
-            </div>
-            <div class="metric">
-              <div class="metric-num">10+</div>
-              <div class="metric-label">Certifications</div>
-            </div>
-          </div>
+  <main class="wrap layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar">
+          <img src="assets/avatar.png" alt="Md Asef Jawad portrait" onerror="this.style.display='none'" />
+          <div class="avatar-fallback" aria-hidden="true">AJ</div>
         </div>
 
-        <div class="hero-card">
-          <div class="avatar-wrap">
-            <img class="avatar" src="assets/avatar.png" alt="Profile photo" onerror="this.style.display='none'" />
-            <div class="avatar-fallback" aria-hidden="true">AJ</div>
-          </div>
-          <div class="hero-card-body">
-            <h2 class="card-title">Highlights</h2>
-            <ul class="bullets">
-              <li>Network QA + regression across wired/wireless; packet-level troubleshooting</li>
-              <li>Python automation for testing and analysis; Agile test planning and execution</li>
-              <li>Applied ML pipelines and models for classification/detection use cases</li>
-            </ul>
+        <h1 class="profile-name">Md Asef Jawad</h1>
+        <p class="profile-title">MNet Student • Networking & Security</p>
+        <p class="profile-sub">
+          Carleton University<br/>
+          Ottawa, ON, Canada
+        </p>
 
-            <div class="card-actions">
-              <a class="link" href="#skills">See skills →</a>
-              <a class="link" href="#experience">See experience →</a>
-            </div>
-          </div>
+        <div class="profile-links">
+          <a class="iconrow" href="https://www.google.com/maps/search/Ottawa,+Ontario" target="_blank" rel="noreferrer">
+            <span class="dot" aria-hidden="true"></span> Ottawa, Ontario, Canada
+          </a>
+          <a class="iconrow" href="https://carleton.ca" target="_blank" rel="noreferrer">
+            <span class="dot" aria-hidden="true"></span> Carleton University
+          </a>
+          <a class="iconrow" href="mailto:asefjawad02@gmail.com">
+            <span class="dot" aria-hidden="true"></span> Email
+          </a>
+          <a class="iconrow" href="https://www.linkedin.com/in/asef-jawad-a4949620a/" target="_blank" rel="noreferrer">
+            <span class="dot" aria-hidden="true"></span> LinkedIn
+          </a>
+          <a class="iconrow" href="https://github.com/MdAsefJawad" target="_blank" rel="noreferrer">
+            <span class="dot" aria-hidden="true"></span> GitHub
+          </a>
+          <!-- Optional -->
+          <a class="iconrow" href="#" target="_blank" rel="noreferrer">
+            <span class="dot" aria-hidden="true"></span> Google Scholar
+          </a>
+          <a class="iconrow" href="#" target="_blank" rel="noreferrer">
+            <span class="dot" aria-hidden="true"></span> ORCID
+          </a>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-          <p class="muted">
-            Network technology graduate student with industry experience spanning test automation, network configuration,
-            and troubleshooting across distributed systems.
-          </p>
-        </div>
+    <!-- Main Content -->
+    <section class="content">
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <ul class="bullets">
+          <li>
+            I am a Master of Network Technology student at Carleton University, with a BCS from Dalhousie University,
+            focused on networking, cybersecurity, and SDN/IoT systems.
+          </li>
+          <li>
+            My recent work includes network QA/regression, packet-level troubleshooting (Wireshark/tcpdump),
+            and Python-based test automation in networked environments.
+          </li>
+          <li>
+            Research interests: AI-assisted traffic classification, anomaly detection, privacy-preserving learning,
+            and next-generation network security.
+          </li>
+          <li>
+            <a href="#cv">Click here to view my CV.</a>
+          </li>
+        </ul>
+      </section>
 
-        <div class="about-grid">
-          <div class="card">
-            <h3>Profile</h3>
-            <p>
-              Master of Network Technology (Carleton University) with a Computer Science background (Dalhousie University).
-              Experienced in building Python-based automated test scripts, executing blackbox/whitebox tests, and validating
-              system behavior under load/stress conditions in networked environments.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Core Interests</h3>
-            <ul class="bullets">
-              <li>Network security engineering and anomaly detection</li>
-              <li>SDN traffic visibility, classification, and DDoS detection</li>
-              <li>IoT security with privacy-preserving learning approaches</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>What I bring</h3>
-            <div class="pill-row">
-              <span class="pill">Wireshark / tcpdump</span>
-              <span class="pill">Python Automation</span>
-              <span class="pill">Agile QA</span>
-              <span class="pill">SDN (Mininet/OpenFlow)</span>
-              <span class="pill">ML Pipelines</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-head">
-          <h2>Projects</h2>
-          <p class="muted">Selected work aligned to SDN, IoT security, and data-center reliability.</p>
-        </div>
-
-        <div class="grid">
-          <article class="card project">
-            <div class="project-top">
-              <h3>Federated Learning for IoT Network Security</h3>
-              <p class="muted">
-                Distributed intrusion detection without centralized data collection.
-              </p>
-            </div>
-            <ul class="bullets">
-              <li>Used Python + TensorFlow + MQTT to train lightweight models across IoT nodes</li>
-              <li>Goal: privacy-preserving anomaly detection for edge devices</li>
-            </ul>
-            <div class="project-links">
-              <a class="btn small" href="https://github.com/mdasefjawad" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn small subtle" href="#" target="_blank" rel="noreferrer">Write-up</a>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div class="project-top">
-              <h3>AI-Assisted Network Traffic Classification using SDN</h3>
-              <p class="muted">
-                Flow-based traffic classification for encrypted/unencrypted traffic and DDoS indicators.
-              </p>
-            </div>
-            <ul class="bullets">
-              <li>Integrated Mininet + OpenFlow controller for dataset capture</li>
-              <li>Applied CNN/LSTM models in Python for pattern recognition</li>
-            </ul>
-            <div class="project-links">
-              <a class="btn small" href="https://github.com/mdasefjawad" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn small subtle" href="#" target="_blank" rel="noreferrer">Demo</a>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div class="project-top">
-              <h3>Digital Twin for Predictive Maintenance in Data Centers</h3>
-              <p class="muted">
-                Forecasting server failures using telemetry and regression-based prediction.
-              </p>
-            </div>
-            <ul class="bullets">
-              <li>Built a digital twin representation of data-center servers</li>
-              <li>Optimized maintenance scheduling to reduce downtime</li>
-            </ul>
-            <div class="project-links">
-              <a class="btn small" href="https://github.com/mdasefjawad" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn small subtle" href="#" target="_blank" rel="noreferrer">Report</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section class="section" id="publications">
-      <div class="container">
-        <div class="section-head">
-          <h2>Publications</h2>
-          <p class="muted">
-            Add your publication list once in <code>script.js</code> (array: <code>PUBLICATIONS</code>), and it renders here.
-          </p>
-        </div>
-
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+        <p class="muted">Add your publication list once in <code>script.js</code> (the <code>PUBLICATIONS</code> array).</p>
         <div class="card">
           <div id="pubsEmpty" class="muted" style="display:none;">
-            No publications loaded yet. Paste your list into <code>script.js</code>.
+            No publications loaded yet. Paste them into <code>script.js</code>.
           </div>
           <ol id="pubsList" class="pubs"></ol>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-head">
-          <h2>Skills</h2>
-          <p class="muted">Technical skills aligned to your CV.</p>
-        </div>
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
 
-        <div class="grid">
-          <div class="card">
-            <h3>Languages & Scripting</h3>
-            <div class="pill-row">
-              <span class="pill">Python</span>
-              <span class="pill">Java</span>
-              <span class="pill">C/C++</span>
-              <span class="pill">SQL</span>
-              <span class="pill">Bash</span>
-              <span class="pill">JavaScript</span>
-              <span class="pill">HTML/CSS</span>
-              <span class="pill">R</span>
-            </div>
+        <div class="card">
+          <h3>Federated Learning for IoT Network Security</h3>
+          <p class="muted">Distributed intrusion detection without centralizing data.</p>
+          <ul class="bullets">
+            <li>Python + TensorFlow + MQTT for edge-friendly training and evaluation.</li>
+            <li>Goal: privacy-preserving anomaly detection for IoT nodes.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn" href="https://github.com/MdAsefJawad" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Write-up</a>
           </div>
-
-          <div class="card">
-            <h3>Networking</h3>
-            <div class="pill-row">
-              <span class="pill">DHCP (DORA)</span>
-              <span class="pill">ARP</span>
-              <span class="pill">IGMP</span>
-              <span class="pill">DNS</span>
-              <span class="pill">SNMP</span>
-              <span class="pill">RIP</span>
-              <span class="pill">HTTP/UDP</span>
-              <span class="pill">802.11</span>
-              <span class="pill">EAPOL</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>QA / Tooling</h3>
-            <div class="pill-row">
-              <span class="pill">Wireshark</span>
-              <span class="pill">tcpdump</span>
-              <span class="pill">Jira</span>
-              <span class="pill">Confluence</span>
-              <span class="pill">Agile</span>
-              <span class="pill">Unit/Regression Testing</span>
-              <span class="pill">Automation</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-head">
-          <h2>Experience</h2>
-          <p class="muted">Industry experience across software testing, network QA, and technical support.</p>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item card">
-            <div class="timeline-title">
-              <h3>Junior Software Developer in Test — Taxtron Inc (Toronto, ON)</h3>
-              <span class="muted">Sep 2023 – Dec 2023</span>
-            </div>
-            <ul class="bullets">
-              <li>Developed Python-based automated test scripts to improve testing efficiency and reliability.</li>
-              <li>Built test plans/cases using Agile; executed blackbox/whitebox, unit, regression, and manual cases.</li>
-              <li>Validated robustness under load/stress; used traffic generation/network tools (e.g., Ixia) for KPI testing.</li>
-            </ul>
-          </div>
-
-          <div class="timeline-item card">
-            <div class="timeline-title">
-              <h3>Network Specialist — Bell Canada (Ottawa, ON)</h3>
-              <span class="muted">Jan 2023 – Jun 2023</span>
-            </div>
-            <ul class="bullets">
-              <li>Configured modems via SSH and TR-181 (TR-69) parameters for wired/wireless regression.</li>
-              <li>Performed packet analysis (Wireshark/tcpdump), OTA captures, and root-cause investigations.</li>
-              <li>Executed Wi-Fi interference/bandwidth tests across 2.4/5/6 GHz and validated service impact.</li>
-            </ul>
-          </div>
-
-          <div class="timeline-item card">
-            <div class="timeline-title">
-              <h3>Technical Support Assistant — Calcoder Inc (Toronto, ON)</h3>
-              <span class="muted">Jun 2022 – Dec 2022</span>
-            </div>
-            <ul class="bullets">
-              <li>Executed backups/restores and supported Microsoft Server/Exchange/Office 365 environments.</li>
-              <li>Supported network/phone-system cutovers including planning, coordination, and validation.</li>
-              <li>Maintained documentation and collaborated with teams/clients to troubleshoot complex issues.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section-head">
-          <h2>Education</h2>
-          <p class="muted">Academic background aligned to networking and systems.</p>
-        </div>
-
-        <div class="grid">
-          <div class="card">
-            <h3>Carleton University — Master of Network Technology</h3>
-            <p class="muted">Ottawa, ON • Sept 2023 – Apr 2026</p>
-          </div>
-          <div class="card">
-            <h3>Dalhousie University — Bachelor of Computer Science</h3>
-            <p class="muted">Halifax, NS • Jan 2020 – May 2022</p>
-          </div>
-          <div class="card">
-            <h3>Tools & Platforms</h3>
-            <div class="pill-row">
-              <span class="pill">Microsoft 365</span>
-              <span class="pill">Git</span>
-              <span class="pill">Linux</span>
-              <span class="pill">API Integration</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section class="section" id="certifications">
-      <div class="container">
-        <div class="section-head">
-          <h2>Certifications</h2>
-          <p class="muted">Selected certifications from your CV.</p>
         </div>
 
         <div class="card">
+          <h3>AI-Assisted Network Traffic Classification using SDN</h3>
+          <p class="muted">Flow-based classification and DDoS indicators using SDN telemetry.</p>
           <ul class="bullets">
-            <li>Microsoft Certified: Azure Fundamentals (Apr 2024)</li>
-            <li>AWS Academy Cloud Foundations (Apr 2024)</li>
-            <li>Google Cybersecurity Certificate (Sep 2023)</li>
-            <li>Introduction to Cybersecurity (Cisco, Sep 2023)</li>
-            <li>Security, Compliance, and Identity Fundamentals (Microsoft, Jun 2023)</li>
-            <li>Intro to Cybersecurity Tools and Attacks (IBM, Apr 2023)</li>
+            <li>Mininet + OpenFlow controller for traffic capture and labeling.</li>
+            <li>CNN/LSTM experiments for detection and classification.</li>
           </ul>
-          <p class="muted" style="margin-top:10px;">Add the remaining items in the same list format if you want the full set displayed.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p class="muted">Email is the best channel.</p>
-        </div>
-
-        <div class="grid">
-          <div class="card">
-            <h3>Email</h3>
-            <p><a class="link" href="mailto:asefjawad02@gmail.com">asefjawad02@gmail.com</a></p>
-            <p class="muted">Ottawa, Ontario</p>
-          </div>
-
-          <div class="card">
-            <h3>Links</h3>
-            <ul class="bullets">
-              <li><a class="link" href="https://github.com/mdasefjawad" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a class="link" href="https://www.linkedin.com/in/asef-jawad-a4949620a/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Resume</h3>
-            <p class="muted">Upload your resume PDF into <code>assets/</code> and link it here.</p>
-            <a class="btn small" href="assets/Resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
+          <div class="btnrow">
+            <a class="btn" href="https://github.com/MdAsefJawad" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Demo</a>
           </div>
         </div>
+      </section>
 
-        <footer class="footer muted">
-          <span>© <span id="year"></span> Md Asef Jawad</span>
-          <span>•</span>
-          <span>mdasefjawad.github.io</span>
-        </footer>
-      </div>
+      <!-- TEACHING (optional section like the example) -->
+      <section id="teaching" class="section">
+        <h2>Teaching</h2>
+        <p class="muted">Add items if applicable (TA, mentoring, workshops).</p>
+        <ul class="bullets">
+          <li>Teaching/TA: ____________________________</li>
+        </ul>
+      </section>
+
+      <!-- HONORS & AWARDS -->
+      <section id="honors" class="section">
+        <h2>Honors & Awards</h2>
+        <ul class="bullets">
+          <li>Microsoft Azure Fundamentals (Apr 2024)</li>
+          <li>AWS Academy Cloud Foundations (Apr 2024)</li>
+          <li>Google Cybersecurity Certificate (Sep 2023)</li>
+        </ul>
+      </section>
+
+      <!-- CV -->
+      <section id="cv" class="section">
+        <h2>CV</h2>
+        <p class="muted">Upload your CV PDF into <code>assets/</code> and link it here.</p>
+        <div class="btnrow">
+          <a class="btn" href="assets/Resume.pdf" target="_blank" rel="noreferrer">Open CV (PDF)</a>
+          <a class="btn ghost" href="https://github.com/MdAsefJawad" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span class="muted">© <span id="year"></span> Md Asef Jawad</span>
+      </footer>
     </section>
   </main>
 

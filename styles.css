@@ -1,7 +1,224 @@
-/* Publications */
-.pubs { margin: 0; padding-left: 18px; }
-.pub-item { margin: 12px 0; }
-.pub-title { font-weight: 800; margin-bottom: 4px; }
-.pub-meta { margin-bottom: 6px; }
-.pub-note { margin-bottom: 6px; }
-.pub-links { display:flex; gap:10px; flex-wrap:wrap; }
+:root{
+  --bg:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --link:#2563eb;
+  --card:#ffffff;
+  --shadow: 0 8px 18px rgba(0,0,0,.08);
+  --radius:16px;
+}
+
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.wrap{ width:min(1120px, 92%); margin:0 auto; }
+
+a{ color: var(--link); text-decoration:none; }
+a:hover{ text-decoration: underline; }
+
+.topbar{
+  position: sticky;
+  top:0;
+  z-index: 50;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 14px;
+  padding: 14px 0;
+}
+
+.topbar-name{
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.topbar-nav{
+  display:flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+}
+
+.topbar-nav a{
+  color: #374151;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+.topbar-nav a:hover{
+  background: #f3f4f6;
+  text-decoration:none;
+}
+
+.topbar-menu{
+  display:none;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 12px;
+  padding: 9px 11px;
+}
+
+.mobile-nav{
+  display:none;
+  padding: 10px 0 14px;
+}
+.mobile-nav a{
+  display:block;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+}
+
+.layout{
+  display:grid;
+  grid-template-columns: 320px 1fr;
+  gap: 26px;
+  padding: 26px 0 40px;
+}
+
+/* Sidebar */
+.sidebar{ position: relative; }
+.profile{
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+  padding: 18px;
+  position: sticky;
+  top: 84px;
+}
+
+.avatar{
+  width: 140px;
+  height: 140px;
+  border-radius: 999px;
+  overflow:hidden;
+  border: 6px solid #f3f4f6;
+  margin: 6px 0 12px;
+  position: relative;
+}
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+}
+.avatar-fallback{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #9ca3af;
+  background:#f9fafb;
+}
+
+.profile-name{
+  margin: 6px 0 2px;
+  font-size: 1.35rem;
+  line-height:1.2;
+}
+
+.profile-title{
+  margin:0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.profile-sub{
+  margin: 10px 0 14px;
+  color: var(--muted);
+}
+
+.profile-links{ display:grid; gap: 10px; }
+.iconrow{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  color: #374151;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #111827;
+  opacity: .85;
+}
+
+/* Content */
+.content{ padding-top: 4px; }
+.section{ padding: 6px 0 18px; }
+.section h2{
+  margin: 0 0 10px;
+  font-size: 2.1rem;
+  letter-spacing: -.02em;
+}
+
+.bullets{ margin: 8px 0 0; padding-left: 22px; }
+.bullets li{ margin: 8px 0; }
+
+.muted{ color: var(--muted); }
+
+.card{
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  margin: 12px 0;
+}
+.card h3{ margin: 0 0 6px; }
+
+.btnrow{ display:flex; gap: 10px; flex-wrap:wrap; margin-top: 10px; }
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background: #111827;
+  color: #fff;
+  text-decoration:none;
+}
+.btn:hover{ opacity: .92; text-decoration:none; }
+.btn.ghost{
+  background: #fff;
+  color: #111827;
+}
+
+.pubs{ margin: 0; padding-left: 22px; }
+.pub-item{ margin: 12px 0; }
+.pub-title{ font-weight: 800; margin-bottom: 4px; }
+.pub-meta{ color: var(--muted); margin-bottom: 6px; }
+.pub-links{ display:flex; gap:10px; flex-wrap:wrap; }
+
+.footer{
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  margin-top: 18px;
+}
+
+/* Responsive */
+@media (max-width: 960px){
+  .layout{ grid-template-columns: 1fr; }
+  .profile{ position: relative; top: 0; }
+  .topbar-nav{ display:none; }
+  .topbar-menu{ display:inline-flex; }
+  .mobile-nav.open{ display:block; }
+}
