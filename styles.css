@@ -104,3 +104,16 @@ a:hover{ text-decoration:underline; }
   .layout{ grid-template-columns: 1fr; }
   .links{ flex-wrap:wrap; justify-content:flex-end; }
 }
+.pubs{
+  margin-left: 18px;
+  margin-bottom: 18px;
+}
+
+.pubs li{
+  margin: 12px 0;
+}
+
+.block h3{
+  margin-top: 22px;
+  font-size: 20px;
+}
