@@ -8,6 +8,7 @@
 }
 
 *{ box-sizing:border-box; }
+
 body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +22,7 @@ a:hover{ text-decoration:underline; }
 
 .container{ width:min(1100px, 92%); margin:0 auto; }
 
-/* top nav like academic sites */
+/* Top nav */
 .topnav{
   position: sticky;
   top:0;
@@ -47,34 +48,49 @@ a:hover{ text-decoration:underline; }
   padding: 26px 0;
 }
 
-/* sidebar */
+/* Cards */
 .card{
   border:1px solid var(--line);
   background: var(--card);
   border-radius: 6px;
   padding: 14px;
 }
+
+/* Sidebar profile */
 .profile{ padding:16px; }
+
 .photo{
-  width:140px; height:140px;
+  width:140px;
+  height:140px;
   border-radius: 999px;
   overflow:hidden;
   border: 6px solid #f2f2f2;
   position:relative;
   margin-bottom: 12px;
 }
+
+/* Ensure image sits ABOVE fallback */
 .photo img{
   width:100%;
   height:100%;
   object-fit:cover;
   display:block;
+  position:relative;
+  z-index:2;
 }
 
+/* Hidden by default; shown only if image fails (JS sets display:grid) */
 .fallback{
-  position:absolute; inset:0;
-  display:grid; place-items:center;
-  font-weight:700; color:#9b9b9b; background:#fafafa;
+  position:absolute;
+  inset:0;
+  display:none;
+  place-items:center;
+  font-weight:700;
+  color:#9b9b9b;
+  background:#fafafa;
+  z-index:1;
 }
+
 .name{ margin: 6px 0 4px; font-size:20px; }
 .role{ color: var(--muted); margin-bottom:6px; }
 .org{ color: var(--muted); margin-bottom: 12px; }
@@ -82,10 +98,10 @@ a:hover{ text-decoration:underline; }
 .meta{ display:grid; gap:8px; margin-top: 12px; }
 .meta a{ color:#333; }
 
-/* content */
+/* Content */
 .content h2{
   margin: 0 0 10px;
-  font-size: 36px;  /* big academic heading like your screenshot */
+  font-size: 36px;
   font-weight: 700;
 }
 .block{ margin-bottom: 34px; }
@@ -95,6 +111,7 @@ a:hover{ text-decoration:underline; }
 .muted{ color: var(--muted); }
 
 .item h3{ margin:0 0 6px; font-size:18px; }
+
 .button{
   display:inline-block;
   margin-top: 8px;
@@ -105,21 +122,39 @@ a:hover{ text-decoration:underline; }
   background:#f8f8f8;
 }
 
-/* mobile */
-@media (max-width: 900px){
-  .layout{ grid-template-columns: 1fr; }
-  .links{ flex-wrap:wrap; justify-content:flex-end; }
-}
+/* Publications */
 .pubs{
   margin-left: 18px;
   margin-bottom: 18px;
 }
-
 .pubs li{
   margin: 12px 0;
+}
+.pub-title{
+  font-weight:700;
+  margin-bottom: 4px;
+}
+.pub-meta{
+  color: var(--muted);
+}
+.pub-note{
+  color: var(--muted);
+  margin-top: 4px;
+}
+.pub-links{
+  margin-top: 6px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
 }
 
 .block h3{
   margin-top: 22px;
   font-size: 20px;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .layout{ grid-template-columns: 1fr; }
+  .links{ flex-wrap:wrap; justify-content:flex-end; }
 }
